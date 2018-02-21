@@ -227,8 +227,14 @@ footer span .footer-brand {
     border-width: 3px;
 }
 
-
 .quote {
+    margin-top:20px;
+    text-align: center;
+    font-size: 10pt;
+}
+
+
+.col .quote p {
     margin-top:20px;
     text-align: center;
     font-size: 10pt;
