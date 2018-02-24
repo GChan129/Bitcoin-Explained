@@ -20,8 +20,33 @@
 </script>
 
 <body>
-
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	
+	<header>
+		<div id="header-inner">
+			<a href="index.html">
+				<img class="nav-logo" src="/assets/images/b_logo.png" width="50" height="50" alt="logo.png"></img>
+				<h3 class="logo-text">BITCOIN EXPLAINED</h3>
+			</a>
+			<nav>
+				<a href="#" id="menu-icon"><i class="fas fa-bars"></i></a>
+				<ul>
+					<li><a href="index.html" class="current">HOME</a></li>
+					<li><a href="https://www.coindesk.com/" target="_blank">NEWS</a></li>
+					<li><a href="https://www.kraken.com/" tergat="_blank">BUY</a></li>
+					<li><a href="https://coinmarketcap.com/" target="_blank">MARKET CAP</a></li>
+				</ul>
+				
+			</nav>
+			
+			
+		</div>
+		
+		
+	</header>
+	
+	
+	
+<!----	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 	  <a class="navbar-brand" href="index.html">
 	    <img class="nav-logo" src="/assets/images/b_logo.png" width="30" height="30" alt="">  Bitcoin Explained </img>
 	  </a>
@@ -42,34 +67,88 @@
 				</li>
 			</ul>
 		</div>
-	</nav>
+	</nav> ---!>
 
 	
 	<!--------------------------------------------------------------- JUMBOTRON ----------------->
-	<header>
+	
+	<section>
 		<div class="jumbotron">
-		    <div class="jumbo-bg container">
-		    	<div class="jumbo-op-full">
-			    	<div class="row">
-			    	    <div class="col">
-				            <h1 class="jumbo-header"> Want to understand what all the hype is about?</h1>
-							<h4 class="home-p">Check out the explainer links below and see why Bitcoin is the future!</h4>
-						</div>
-				        <div class="col">
-							<div class="col btcwdgt-chart"></div>
-						</div>
-		           	</div>
-	           	</div>
+			<div class="row">
+		    <div class="jumbo-bg container-fluid">
+			    <div class="row">
+			    	<div class="col">
+			            <h1 class="jumbo-header"> Want to understand what all the hype is about?</h1>
+						<h4 class="jumbo-text">Click the links below to learn about the pioneer of the new internet.</h4>				
+					</div>
+			        <div class="col">
+						<div class="col btcwdgt-chart"></div>
+					</div>
+		       	</div>
+		    </div>
 		    </div>
 		</div>
-	</header>
+	</section>
 		<!--------------------------------------------------------------- LINKS ----------------->
+	
+	<div class="row">
+		<section class="one-fourth" id="btc101">
+			<td><i class="fab fa-bitcoin index-icon .animated"></i></td>
+			<h2 class="index-links">Bitcoin 101</h2>
+		</section>
+		
+		<section class="one-fourth" id="blockchain">
+			<td><i class="fas fa-link index-icon .animated"></i></td>
+			<h2 class="index-links">The Blockchain</h2>
+		</section>
+		
+		<section class="one-fourth" id="cryptocurrency">
+			<td><i class="fas fa-money-bill-alt index-icon .animated"></i></td>
+			<h2 class="index-links">Cryptocurrency</h2>
+		</section>
+		
+		<section class="one-fourth" id="decentrialisation">
+			<td><i class="fa fa-globe index-icon .animated"></i></td>
+			<h2 class="index-links">Decentrialisation</h2>
+		</section>  
+	</div>
+	
+	<div class="row">
+		<section class="one-fourth" id="mining">
+			<td><i class="fas fa-cogs index-icon .animated"></i></td>
+			<h2 class="index-links">Mining</h2>
+		</section>
+		
+		<section class="one-fourth" id="forks">
+			<td><i class="fab fa-hubspot index-icon .animated"></i></td>
+			<h2 class="index-links">Forks</h2>
+		</section>
+		
+		<section class="one-fourth" id="scams">
+			<td><i class="fas fa-crosshairs index-icon .animated"></i></td>
+			<h2 class="index-links">Scams</h2>
+		</section>
+		
+		<section class="one-fourth" id="security">
+			<td><i class="fas fa-key index-icon .animated"></i></td>
+			<h2 class="index-links">Security</h2>
+		</section>
+	</div>	 
+
+
+	<div class="col quote">
+	   <p><i>"You'll come for the lambos...but stay for the decentralized revolution in individual freedom & financial sovereignty leading to a restructuring of global economics & power & a shift in favor of the people, rights, peace & liberty the likes of which the world has never imagined."</i>
+		 - Bruce Fenton</p>
+	</div>
+	
+	
+	<!--- prev section 
 	<section>
-		<h4 align="middle">This site is designed in bitesized nuggets of information. Feel free to skip what's boring.</h3>
-		<br>
+		<h4 class="info" align="middle">This site is designed in bitesized nuggets of information. Feel free to skip what's boring.</h3>
+		<br><br>
 		
 		<div class="container home-links">
-		    <div class="row home-links-row">
+		    <div class="row">
 		        <div class="col-sm exp-link btc-link">
 		           <a href="btc101.html">
 		               <h1><i class="fab fa-bitcoin"></i></h1>
@@ -103,38 +182,40 @@
 			            </div>
 			        </a>
 			    </div>
+			</div>
 			    
-			    <div class="row ">
-			        <div class="col-sm exp-link">
-			           <a href="mining.html">
-			               <h1><i class="fas fa-cogs"></i></h1>
-			               <h2>Mining</h2>
-			               <p>Digital miners? Who are they and what do they have to do with Bitcoin?</p>
-			           </a>
-			        </div>
+		    <div class="row ">
+		        <div class="col-sm exp-link exp-link-2nd-row">
+		 	       <a href="mining.html">
+	               		<h1><i class="fas fa-cogs"></i></h1>
+						<h2>Mining</h2>
+			    		<p>Digital miners? Who are they and what do they have to do with Bitcoin?</p>
+		           </a>
+		    	</div>
 			    
-				    <div class="col-sm exp-link">
-				        <a href="fork.html">
-			            	<h1><i class="fab fa-hubspot"></i></h1>
-				            <h2>Forks</h2>
-				            <p>There's more than one kind of Bitcoin?! What's Bitcoin Cash / Gold / Dimond / Red?</p>
-				        </a>
-				    </div>
-				    <div class="col-sm exp-link">
-					    <a href="scams.html">
-			 	           <h1><i class="fas fa-crosshairs"></i></h1>
-			               <h2>Scams</h2>
-			               <p>If everyone's making money for doing nothing surely it's a big fat Ponzi scheme.</p>
-			           </a>
-			        </div>
-			        <div class="col-sm exp-link">
-			           <a href="security.html">
-			               <h1><i class="fas fa-key"></i></h1>
-			               <h2>Security</h2>
-			               <p>If Bitcoin is supposed to be unhackable, then how did all those people get hacked?</p>
-			           </a>
-				    </div>
+			    <div class="col-sm exp-link exp-link-2nd-row">
+			        <a href="fork.html">
+		            	<h1><i class="fab fa-hubspot"></i></h1>
+			            <h2>Forks</h2>
+			            <p>There's more than one kind of Bitcoin?! What's Bitcoin Cash / Gold / Dimond / Red?</p>
+			        </a>
 			    </div>
+
+			    <div class="col-sm exp-link exp-link-2nd-row">
+				    <a href="scams.html">
+				    	<h1><i class="fas fa-crosshairs"></i></h1>
+			    		<h2>Scams</h2>
+			        	<p>If everyone's making money for doing nothing surely it's a big fat Ponzi scheme.</p>
+			        </a>
+			    </div>
+			     
+			    <div class="col-sm exp-link exp-link-2nd-row">
+					<a href="security.html">
+			 	       <h1><i class="fas fa-key"></i></h1>
+			           <h2>Security</h2>
+		               <p>If Bitcoin is supposed to be unhackable, then how did all those people get hacked?</p>
+		        	</a>
+				 </div>
 			</div>
 
 	    <div class="col quote">
@@ -143,9 +224,7 @@
 	        	</div>
 	        </div>
 		</div>
-	</section>
-	
-	
+	</section> --!>
 	
 
 	<!-------------------------------------------------------------------FOOTER ----->
