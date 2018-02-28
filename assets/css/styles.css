@@ -102,6 +102,11 @@ a:hover #menu-icon {
     margin: 0 auto;
 }
 
+.jumbo-row {
+    margin: 0 auto;
+}
+
+
 .jumbo-header {
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
@@ -109,6 +114,7 @@ a:hover #menu-icon {
     margin-right: 20px;
     text-align: center;
     opacity:1;
+    margin-left: 20px;
 }
 
 .jumbotron h1 {
@@ -122,8 +128,11 @@ a:hover #menu-icon {
 }
 
 .jumbo-bg .container {
-    max-width: 700px;
     margin: 0 auto;
+}
+
+.btcwdgt-chart {
+    padding-left: 0;
 }
 
 /*-------------------- index links----------------------*/
@@ -155,35 +164,35 @@ a:hover #menu-icon {
 
 
 #btc101 {
-    background-color: #FFF916;
+    background-color: #EFFF76;
 }
 
 #blockchain {
-    background-color: #5857FF;
+    background-color: #B9C5EB;
 }
 
 #cryptocurrency {
-    background-color: #64AD2B;
+    background-color: #B0EB96;
 }
 
 #decentrialisation {
-    background-color: #A34DFF ;
+    background-color: #DDBEEB ;
 }
 
 #mining {
-    background-color: #7C737F;
+    background-color: #F2F2F2;
 }
 
 #forks {
-    background-color: #00D3FF ;
+    background-color: #ABFFC9 ;
 }
 
 #scams {
-    background-color: #FF4A3D;
+    background-color: #FF7F7C;
 }
 
 #security {
-    background-color: #FF941C;
+    background-color: #FFD275;
 }
 
 
