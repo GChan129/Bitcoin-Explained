@@ -89,6 +89,16 @@ nav ul li a:hover {
 a:hover #menu-icon {
     border-radius:4px 4px 0px 0px;
 }
+
+a {
+    margin:0;
+    padding:0;
+}
+
+a:hover {
+    color:grey;
+}
+
 /*----------------- jumbotron ----- */
 
 .jumbotron {
@@ -194,6 +204,12 @@ a:hover #menu-icon {
 #security {
     background-color: #FFD275;
 }
+
+.one-fourth a:hover {
+    color: #4a4e58;
+}
+
+
 
 
 .exp-btc {
@@ -340,6 +356,25 @@ footer span .footer-brand {
     margin-top:20px;
 }
 
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+/* The element to apply the animation to */
+div {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+
 /* ----------------------------------------- BTC101 ---------------------*/
 
 .pages-spacing {
@@ -439,3 +474,104 @@ footer {
     margin: 0 auto;
     max-width: 1000px;
 }
+
+@media screen and (max-width: 667px) {
+    
+    header {
+        position: absolute;
+    }
+    
+    .nav-logo {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    
+    .logo-text {
+        margin-top: 19px;
+        margin-left: 10px;
+        font-weight: 400;
+        font-size: 150%;
+    }
+    
+    #menu-icon {
+        display: inline-block;
+    }
+    
+    nav ul, nave:active ul {
+        display:none;
+        z-index: 1000;
+        position: absolute;
+        margin-left:-100px;
+        margin-top:0;
+        margin-bottom: 0;
+        border:0;
+        padding: 0;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        background-color: #F8F9FF;
+        border: 1px solid #fffff2;
+        border-radius: 2px 0px 2px 2px;
+        
+    }
+    
+    nav:hover ul {
+        display: block;
+    }
+    
+    nav {
+        padding-right: 15px;
+    }
+    
+    nav li {
+        text-align: center;
+        width: 100%;
+        margin-top:0;
+        padding-top:0;
+    }
+    
+    .one-fourth {
+        width: 50%;
+    }
+}
+
+/*--------- menu bar 
+
+
+#menu-icon {
+        display: inline-block;
+        font-size-adjust: 200%;
+    }
+    
+    nav ul, nave:active ul {
+        display:none;
+        z-index: 1000;
+        position: absolute;
+        margin-left:-100px;
+        margin-top:0;
+        margin-bottom: 0;
+        border:0;
+        padding: 0;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        background-color: #F8F9FF;
+        border: 1px solid #fffff2;
+        border-radius: 2px 0px 2px 2px;
+        
+    }
+    
+    nav:hover ul {
+        display: block;
+    }
+    
+    nav {
+        padding-right: 15px;
+    }
+    
+    nav li {
+        text-align: center;
+        width: 100%;
+        margin-top:0;
+        padding-top:0;
+    }
+        
+    ----*/
