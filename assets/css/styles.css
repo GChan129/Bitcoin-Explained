@@ -13,6 +13,11 @@ a {
     margin-right: 30px;
 }
 
+a .index-links {
+    margin:0;
+    padding:0;
+}
+
 a:hover{
     text-decoration: none;
 }
@@ -25,13 +30,8 @@ h2 {
     padding: 5% 0;
 }
 
-.index-links {
-    text-align: center;
-    padding:2%;
-}
-
 #header-inner {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -43,7 +43,7 @@ header {
 
 .nav-logo {
     margin-top: 10px;
-    margin-left: 150px;
+    margin-left: 0;
     float:left;
 }
 
@@ -59,7 +59,7 @@ header {
 
 nav {
     float: right;
-    padding: 10px 150px 0 0;
+    padding: 10px 0 0 0;
     position: static; 
 }
 
@@ -69,9 +69,9 @@ nav {
 }
 
 nav ul li {
-    margin-top: 8px;
-    margin-left: 15px;
-    font-size: 150%;
+    margin-top: 5px;
+    margin-left: 25px;
+    font-size: 160%;
     display: inline-block;
     float: left;
 }
@@ -104,6 +104,10 @@ a:hover {
 .jumbotron {
     margin-top:0;
     background-image: url("/assets/images/btc_jumbo_bg.jpg");
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+    max-width: 100%;
 }
 
 .jumbo-bg {
@@ -114,6 +118,7 @@ a:hover {
 
 .jumbo-row {
     margin: 0 auto;
+    width: 1000px;
 }
 
 
@@ -149,15 +154,18 @@ a:hover {
 
 .one-fourth {
     width: 25%;
-    background-color: blue;
     float: left;
-    text-align: center;
 }
 
 .index-links {
        font-family: 'Oswald', sans-serif;
        font-size: 28pt;
        font-weight: 700;
+}
+
+.text-center {
+    text-align: center;
+    padding-bottom: 10%;
 }
 
 #blockchain {
@@ -177,32 +185,128 @@ a:hover {
     background-color: #EFFF76;
 }
 
+@keyframes btc101-link-anim {
+    0%   {background-color:#EFFF76;}
+    100% {background-color:#EFF333;}
+}
+
+#btc101:hover {
+    background-color: #EFFF76;
+    animation-name: btc101-link-anim;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
 #blockchain {
     background-color: #B9C5EB;
+}
+
+@keyframes blockchain-link-anim {
+    0%   {background-color:#B9C5EB;}
+    100% {background-color:#61CFFF;}
+}
+
+#blockchain:hover {
+    background-color: #B9C5EB;
+    animation-name: blockchain-link-anim;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 #cryptocurrency {
     background-color: #B0EB96;
 }
 
+@keyframes cryptocurrency-link-anim {
+    0%   {background-color:#B0EB96;}
+    100% {background-color:#78FF0C;}
+}
+
+#cryptocurrency:hover {
+    background-color: #B0EB96;
+    animation-name: cryptocurrency-link-anim;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
 #decentrialisation {
     background-color: #DDBEEB ;
+}
+
+@keyframes decentrialisation-link-anim {
+    0%   {background-color:#DDBEEB;}
+    100% {background-color:#CB39FF;}
+}
+
+#decentrialisation:hover {
+    background-color: #DDBEEB;
+    animation-name: decentrialisation-link-anim;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 #mining {
     background-color: #F2F2F2;
 }
 
+@keyframes mining-link-anim {
+    0%   {background-color: #F2F2F2;}
+    100% {background-color:#858596;}
+}
+
+#mining:hover {
+    background-color: #F2F2F2;
+    animation-name: mining-link-anim;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
 #forks {
     background-color: #ABFFC9 ;
+}
+
+@keyframes forks-link-anim {
+    0%   {background-color: #ABFFC9;}
+    100% {background-color:#4AFFFF;}
+}
+
+#forks:hover {
+    background-color: #ABFFC9;
+    animation-name: forks-link-anim;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 #scams {
     background-color: #FF7F7C;
 }
 
+@keyframes scams-link-anim {
+    0%   {background-color:#FF7F7C;}
+    100% {background-color:#FF4B2A;}
+}
+
+#scams:hover {
+    background-color: #FF7F7C;
+    animation-name: scams-link-anim;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
 #security {
     background-color: #FFD275;
+}
+
+@keyframes security-link-anim {
+    0%   {background-color:#FFD275;}
+    100% {background-color:#FFD22A;}
+}
+
+#security:hover {
+    background-color: #FFD275;
+    animation-name: security-link-anim;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 .one-fourth a:hover {
@@ -356,24 +460,6 @@ footer span .footer-brand {
     margin-top:20px;
 }
 
-@keyframes example {
-    0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color:yellow; left:200px; top:0px;}
-    50%  {background-color:blue; left:200px; top:200px;}
-    75%  {background-color:green; left:0px; top:200px;}
-    100% {background-color:red; left:0px; top:0px;}
-}
-
-/* The element to apply the animation to */
-div {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    background-color: red;
-    animation-name: example;
-    animation-duration: 4s;
-}
-
 
 /* ----------------------------------------- BTC101 ---------------------*/
 
@@ -468,12 +554,6 @@ footer {
     
 }
 
-.jumbotron {
-    padding-left: 0;
-    padding-right: 0;
-    margin: 0 auto;
-    max-width: 1000px;
-}
 
 @media screen and (max-width: 667px) {
     
