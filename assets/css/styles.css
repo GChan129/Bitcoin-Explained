@@ -467,6 +467,12 @@ footer span .footer-brand {
 
 /* ----------------------------------------- BTC101 ---------------------*/
 
+.center {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+
 .pages-spacing {
  margin-top:40px;   
  
@@ -501,7 +507,6 @@ footer span .footer-brand {
     font-size: 12pt;
     padding-top:17px;
     padding-bottom: 10px;
-    background-color: #F8F9FF;
 }
 
 
@@ -515,7 +520,30 @@ footer {
     margin-top:0;
 }
 
+.one-tenth-div {
+    width: 5%;
+}
+
+.link-left {
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.link-right {
+    width: 45%;
+    text-align: right;
+}
+
 /*-------------------------- Blockchain ---------------*/
+
+#blk-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 65%;
+    height: 65%;
+}
 
 .blockchain-page-spacing {
     margin-top: 0;
