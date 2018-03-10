@@ -239,69 +239,6 @@ a:hover {
     animation-fill-mode: forwards;
 }
 
-#mining {
-    background-color: #F2F2F2;
-}
-
-@keyframes mining-link-anim {
-    0%   {background-color: #F2F2F2;}
-    100% {background-color:#858596;}
-}
-
-#mining:hover {
-    background-color: #F2F2F2;
-    animation-name: mining-link-anim;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-#forks {
-    background-color: #ABFFC9 ;
-}
-
-@keyframes forks-link-anim {
-    0%   {background-color: #ABFFC9;}
-    100% {background-color:#4AFFFF;}
-}
-
-#forks:hover {
-    background-color: #ABFFC9;
-    animation-name: forks-link-anim;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-#scams {
-    background-color: #FF7F7C;
-}
-
-@keyframes scams-link-anim {
-    0%   {background-color:#FF7F7C;}
-    100% {background-color:#FF4B2A;}
-}
-
-#scams:hover {
-    background-color: #FF7F7C;
-    animation-name: scams-link-anim;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-#security {
-    background-color: #FFD275;
-}
-
-@keyframes security-link-anim {
-    0%   {background-color:#FFD275;}
-    100% {background-color:#FFD22A;}
-}
-
-#security:hover {
-    background-color: #FFD275;
-    animation-name: security-link-anim;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
 
 .one-fourth a:hover {
     color: #4a4e58;
@@ -558,20 +495,7 @@ footer {
 
 /*-----------------------------------------------MEDIA QUERY ---------*/
 
-@media (max-width: 400px) {
-    .footer {
-        padding-bottom: 30px;
-    }
-    
-    .desktop-only {
-         display:none;
-    }
-    
-    .btc101 {
-    margin-top:0px;
-    margin-right:0px;
-}
-}
+
 
 @media (min-width: 575px) {
     .exp-link-2nd-row {
@@ -659,6 +583,53 @@ footer {
     .one-fourth {
         width: 50%;
     }
+}
+
+@media (max-width: 360px) {
+    .jumbo-header {
+        margin-top: 55px;
+        margin-bottom: 0px;
+    }
+    
+    .jumbotron h1 {
+        margin-bottom: 15px;
+    }
+    
+    #jumbo-text{
+        line-height: 120%;
+    }
+    
+    .jumbo-row {
+        width: auto;
+    }
+    
+    .zero-pad {
+        padding:0;
+        margin:0;
+    }
+    
+    .one-fourth {
+        width: 100%;
+        float: inherit;
+    }
+    
+    .index-links {
+        font-size: 20pt;
+    }
+    
+    
+    .footer {
+        padding-bottom: 30px;
+    }
+    
+    .desktop-only {
+         display:none;
+    }
+    
+    .btc101 {
+    margin-top:0px;
+    margin-right:0px;
+}
 }
 
 /*--------- menu bar 
