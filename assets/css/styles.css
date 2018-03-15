@@ -1,3 +1,8 @@
+body {
+    min-width: 320px;
+}
+
+
 ul {
  list-style-type: none;
  }
@@ -57,20 +62,17 @@ nav {
     position: static; 
 }
 
-.navbar-brand {
-    font-family: 'Oswald', sans-serif;
-    margin-right: 30px;
-}
 
-nav ul li {
+.nav-links {
     margin-top: 5px;
     margin-left: 25px;
     font-size: 160%;
     display: inline-block;
-    float: left;
 }
 
-nav ul li a:hover {
+
+
+.nav-links a:hover {
     animation-duration: .5s;
     color: grey;
 }
@@ -93,6 +95,52 @@ a:hover {
     color: #000 ;
 }
 
+.dropdown {
+    position: relative;
+    display: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #F8F9FF;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 10px 5px;
+    z-index: 1;
+}
+
+.dropdown-content ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 2.5% 10%;
+}
+
+.dd-link {
+    display: block;
+}
+
+.dd-link:hover {
+    font-size: 160%;
+    
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.fa-bars {
+    font-size: 180%;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.dd-link {
+    font-size: 135%;
+    padding: 4% 0 0 0;
+}
+
 /*----------------- jumbotron ----- */
 
 .jumbotron {
@@ -102,6 +150,7 @@ a:hover {
     padding-right: 0;
     margin: 0 auto;
     max-width: 100%;
+    background-size: 100%
 }
 
 .jumbo-bg {
@@ -409,16 +458,8 @@ footer span .footer-brand {
     max-width: 1000px;
 }
 
-
 .pages-spacing {
- margin-top:40px;   
- 
-}
-
-
-.pages-spacing p{
-    margin-top:20px;
-    font-size: 20px;
+     margin-top:40px;   
 }
 
 .btc101 {
@@ -492,92 +533,31 @@ footer {
 
 }
 
-
-/*-----------------------------------------------MEDIA QUERY ---------*/
-
-
-
-@media (min-width: 575px) {
-    .exp-link-2nd-row {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-    
-    .desktop-only {
-        display: inline;
-    } 
-
+.min-row-width {
+    min-width: 578px;
 }
 
-@media (min-width: 767px) {
+/*-------------- MEDIA QUERY V2 -----*/
+
+@media only screen and (max-width: 1199px) and (min-width: 1000px) {
     
-    
-    .exp-link-2nd-row {
-        padding-left: 0px;
-        padding-right: 0px;
+    .one-fourth {
+        width: 50%;
     }
 }
 
-@media (min-width: 576px) {
-.jumbotron {
-    margin-bottom: 0rem;
-}
+@media only screen and (max-width: 999px) and (min-width: 700px) {
     
-}
-
-
-@media screen and (max-width: 667px) {
-    
-    header {
-        position: absolute;
+    .jumbo-row {
+        width: auto;
     }
     
-    .nav-logo {
-        margin-top: 10px;
-        margin-left: 10px;
+    .jumbo-text-col {
+        width: 40%;
     }
     
-    .logo-text {
-        margin-top: 19px;
-        margin-left: 10px;
-        font-weight: 400;
-        font-size: 150%;
-    }
-    
-    #menu-icon {
-        display: inline-block;
-    }
-    
-    nav ul, nave:active ul {
-        display:none;
-        z-index: 1000;
-        position: absolute;
-        margin-left:-100px;
-        margin-top:0;
-        margin-bottom: 0;
-        border:0;
-        padding: 0;
-        padding-right: 20px;
-        padding-bottom: 10px;
-        background-color: #F8F9FF;
-        border: 1px solid #fffff2;
-        border-radius: 2px 0px 2px 2px;
-        
-    }
-    
-    nav:hover ul {
-        display: block;
-    }
-    
-    nav {
-        padding-right: 15px;
-    }
-    
-    nav li {
-        text-align: center;
-        width: 100%;
-        margin-top:0;
-        padding-top:0;
+    .jumbo-widget {
+        width: 40%;
     }
     
     .one-fourth {
@@ -585,91 +565,113 @@ footer {
     }
 }
 
-@media (max-width: 360px) {
-    .jumbo-header {
-        margin-top: 55px;
-        margin-bottom: 0px;
+@media only screen and (max-width: 699px) and (min-width: 591px) {
+    
+    .logo-text {
+        font-size: 150%;
+        margin-left: 10px;
     }
     
-    .jumbotron h1 {
-        margin-bottom: 15px;
-    }
-    
-    #jumbo-text{
-        line-height: 120%;
+    .nav-links {
+        font-size: 140%;
+        margin-left: 10px;
+        margin-right: 5px;
     }
     
     .jumbo-row {
-        width: auto;
+        width: 100%;
     }
     
-    .zero-pad {
-        padding:0;
-        margin:0;
+    .jumbo-text-col {
+        min-width: 90%;
+    }
+    
+    .jumbo-widget {
+        min-width: 90%;
+    }
+    
+    .one-fourth {
+        width: 50%;
+    }
+    
+    #jumbo-text {
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+    }
+    
+    
+}
+
+
+
+@media only screen and (max-width: 590px) and (min-width: 530px) {
+    
+    .nav-links {
+        display: none;
+    }
+    
+    .dropdown {
+        display: inline-block;
+}
+    
+    .logo-text {
+        font-size: 150%;
+        margin-left: 10px;
+    }
+
+    .jumbo-row {
+        width: 100%;
+    }
+    
+    .jumbo-text-col {
+        min-width: 90%;
+    }
+    
+    .jumbo-widget {
+        min-width: 90%;
+    }
+    
+    .one-fourth {
+        width: 50%;
+    }
+    
+    #jumbo-text {
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 529px) and (min-width: 150px) {
+    
+    .nav-links {
+        display: none;
+    }
+    
+    .dropdown {
+        display: inline-block;
+}
+    
+     .logo-text {
+        font-size: 150%;
+        margin-left: 10px;
+    }
+    
+    .jumbo-row {
+        width: 100%;
+    }
+    
+    .jumbo-text-col {
+        min-width: 90%;
+    }
+    
+    .jumbo-widget {
+        display: none;
     }
     
     .one-fourth {
         width: 100%;
-        float: inherit;
+        min-width: 320px;
     }
-    
-    .index-links {
-        font-size: 20pt;
-    }
-    
-    
-    .footer {
-        padding-bottom: 30px;
-    }
-    
-    .desktop-only {
-         display:none;
-    }
-    
-    .btc101 {
-    margin-top:0px;
-    margin-right:0px;
 }
-}
-
-/*--------- menu bar 
-
-
-#menu-icon {
-        display: inline-block;
-        font-size-adjust: 200%;
-    }
-    
-    nav ul, nave:active ul {
-        display:none;
-        z-index: 1000;
-        position: absolute;
-        margin-left:-100px;
-        margin-top:0;
-        margin-bottom: 0;
-        border:0;
-        padding: 0;
-        padding-right: 20px;
-        padding-bottom: 10px;
-        background-color: #F8F9FF;
-        border: 1px solid #fffff2;
-        border-radius: 2px 0px 2px 2px;
-        
-    }
-    
-    nav:hover ul {
-        display: block;
-    }
-    
-    nav {
-        padding-right: 15px;
-    }
-    
-    nav li {
-        text-align: center;
-        width: 100%;
-        margin-top:0;
-        padding-top:0;
-    }
-        
-    ----*/
