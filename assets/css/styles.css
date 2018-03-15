@@ -146,7 +146,7 @@ a:hover {
 
 .jumbotron {
     margin-top:0;
-    background-image: url("assets/images/btc_jumbo_bg.jpg");
+    background-image: url("../images/btc_jumbo_bg.jpg");
     padding-left: 0;
     padding-right: 0;
     margin: 0 auto;
