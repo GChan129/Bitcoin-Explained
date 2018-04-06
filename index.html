@@ -1,135 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
-	<link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
-	<link href="https://fonts.googleapis.com/css?family=Muli|Oswald|Pragati+Narrow" rel="stylesheet">
-	<title>Bitcoin Explained | Cryptocurrency Made Simple</title>
-</head>
+<html lang="en-us">
 
-<script>
-  (function(b,i,t,C,O,I,N) {
-    window.addEventListener('load',function() {
-      if(b.getElementById(C))return;
-      I=b.createElement(i),N=b.getElementsByTagName(i)[0];
-      I.src=t;I.id=C;N.parentNode.insertBefore(I, N);
-    },false)
-  })(document,'script','https://widgets.bitcoin.com/widget.js','btcwdgt');
-</script>
-
-<body>
+	<head>
 	
-	<header>
-		<div id="header-inner">
-			<a href="index.html">
-				<img class="nav-logo" src="./assets/images/b_logo.png" width="50" height="50" alt="logo.png"></img>
-				<h3 class="logo-text">BITCOIN EXPLAINED</h3>
-			</a>
-			
-			<nav>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	    <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+		<link rel="stylesheet" href="./assets/css/styles.css" type="text/css" />
+		<title>BTC Explained V2</title>
+	</head>
+	
+	<script>
+	  (function(b,i,t,C,O,I,N) {
+	    window.addEventListener('load',function() {
+	      if(b.getElementById(C))return;
+	      I=b.createElement(i),N=b.getElementsByTagName(i)[0];
+	      I.src=t;I.id=C;N.parentNode.insertBefore(I, N);
+	    },false)
+	  })(document,'script','https://widgets.bitcoin.com/widget.js','btcwdgt');
+	</script>
+
+	<body>
+		<header class="body-max-width top-bar">
+			<div class="col-4">
+				<div class="float--left">
+					<a href="index.html" class="remove-a-styles float--left">
+						<img class="nav-logo float--left" src="./assets/images/b_logo.png" width="20%" height="20%" alt="logo.png"></img>
+						<h2 class="logo-text float--right">BITCOIN EXPLAINED</h2>
+					</a>
+				</div>
+			</div>
+			<div class="col-8">
 				<div class="dropdown">
-				<i class="fas fa-bars"></i>
-					<div class="dropdown-content">
-					    <ul>
-							<li><a href="index.html" class="dd-link">HOME</a></li>
-							<li><a href="https://www.coindesk.com/" class="dd-link" target="_blank">NEWS</a></li>
-							<li><a href="https://www.kraken.com/" class="dd-link" target="_blank">BUY</a></li>
-							<li><a href="https://coinmarketcap.com/" class="dd-link" target="_blank">MARKET CAP</a></li>
-						</ul>
+					<i class="fas fa-bars"></i>
+						<div class="dropdown-content">
+						    <ul>
+								<li><a href="index.html" class="remove-a-styles">HOME</a></li>
+								<li><a href="https://www.coindesk.com/" class="remove-a-styles" target="_blank">NEWS</a></li>
+								<li><a href="https://www.kraken.com/" class="remove-a-styles" target="_blank">BUY</a></li>
+								<li><a href="https://coinmarketcap.com/" class="remove-a-styles" target="_blank">MARKET CAP</a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
-				<a href="index.html" class="nav-links">HOME</a>
-				<a href="https://www.coindesk.com/" class="nav-links" target="_blank">NEWS</a>
-				<a href="https://www.kraken.com/" class="nav-links" target="_blank">BUY</a>
-				<a href="https://coinmarketcap.com/" class="nav-links mcap" target="_blank">MARKET CAP</a>
-			</nav>
-		</div>
-	</header>
+				<div>
+					<a href="index.html" class="nav-links remove-a-styles">HOME</a>
+					<a href="https://www.coindesk.com/" class="nav-links remove-a-styles" target="_blank">NEWS</a>
+					<a href="https://www.kraken.com/" class="nav-links remove-a-styles" target="_blank">BUY</a>
+					<a href="https://coinmarketcap.com/" class="nav-links remove-a-styles" target="_blank">MARKET CAP</a>
+				</div>
+				
+			</div>	
+			
 
-	<!--------------------------------------------------------------- JUMBOTRON ----------------->
-
-	<section>
-		<div class="jumbotron">
-			<div class="row jumbo-row">
-			    <div class="jumbo-bg container-fluid">
-				    <div class="row ">
-				    	<div class="col jumbo-text-col">
-				            <h1 class="jumbo-header"> Want to understand what all the hype is about?</h1>
-							<h4 id="jumbo-text">Click the links below to learn about the pioneer of the new internet.</h4>				
-						</div>
-				        <div class="col jumbo-widget">
-							<div class="col btcwdgt-chart"></div>
-						</div>
-			       	</div>
-			    </div>
-		    </div>
-		</div>
-	</section>
-		<!--------------------------------------------------------------- LINKS ----------------->
-
-	<div class="row">
-		<a href="btc101.html" class="index-links one-fourth" id="btc101">
-			<section class="text-center">
-				<i class="fab fa-bitcoin index-icon .animated"></i>
-				<h2 class="index-links">Bitcoin 101</h2>
-			</section>
-		</a>
+		</header>
 		
-		<a href="blockchain.html" class="index-links one-fourth" id="blockchain">
-			<section class="text-center">
-				<i class="fas fa-link index-icon .animated"></i>
-				<h2 class="index-links">The Blockchain</h2>
-			</section>
-		</a>
+		<!----------------------------------------------------------------- TITLE ------------>
 		
-		<a href="crypto.html" class="index-links one-fourth" id="cryptocurrency">
-			<section class="text-center">
-				<i class="fas fa-money-bill-alt index-icon .animated"></i>
-				<h2 class="index-links">Cryptocurrency</h2>
-			</section>
-		</a>
+		<section class="body-max-width">
+			<div class="home-title">
+				<h1>Learn about digital currency and the future of the internet.</h1>
+				<h3>Click the links below to learn about the pioneer of the new internet.</h3>		
+			</div>
+		</section>
 		
-		<a href="decent.html" class="index-links one-fourth" id="decentrialisation">
-			<section class="text-center">
-				<i class="fa fa-globe index-icon .animated"></i>
-				<h2 class="index-links">Decentrialisation</h2>
-			</section>  
-		</a>
-	</div>
-	
-	<!--------- QUOTE ------------->
+			<!----------------------------------------------------------------- BODY LINKS ------------>
+		
+		<section class="body-max-width">
+			<div class="row">
+				<div class="col-sm-8 link-btc101 home-link-styles">
+					<a href="bitcoin101.html" class="remove-a-styles">
+						<h1 class="links-icon"><i class="fab fa-bitcoin"></i> Bitcoin 101</h1>
+					</a>
+				</div>
+				
+				<div class="col-sm-4 home-img1 home-img-margin">
+				</div>
+			</div>
 
-	<div class="col quote">
-	   <p><i>"You'll come for the lambos...but stay for the decentralized revolution in individual freedom & financial sovereignty leading to a restructuring of global economics & power & a shift in favor of the people, rights, peace & liberty the likes of which the world has never imagined."</i>
-		 - Bruce Fenton</p>
-	</div>
+			<div class="row">
+				<div class="half-width link-blockchain home-link-styles">
+					<a href="blockchain.html" class="remove-a-styles">
+						<h1 class="links-icon"><i class="fas fa-link"></i> Blockchain</h1>
+					</a>
+				</div>
+				<div class="half-width"></div>
+			</div>
+			
+			<div class="row">
+				<div class="col-sm-2">
+				</div>
+				
+				<div class="col-sm-8 link-crypto home-link-styles">
+					<a href="Crypto.html" class="remove-a-styles">
+						<h2 class="links-icon"><i class="fas fa-money-bill-alt"></i> Cryptocurrency</h2>
+					</a>
+				</div>
+				
+				<div class="col-sm-2">
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-sm-4 home-img2 home-img-margin">
+				</div>
+				
+				<div class="col-sm-8 link-decent home-link-styles">
+					<a href="decent.html" class="remove-a-styles">
+						<h1 class="links-icon">	<i class="fa fa-globe"></i> Decentralization</h1>
+					</a>
+				</div>
+			</div>
+			
+		</section>
+		
+			<!----------------------------------------------------------------- FOOTER ------------>
 
-
-	<!-------------------------------------------------------------------FOOTER ----->
-	
-
-	
-	<footer>
-	    <div class="container-fluid footer">
-	        <div class="row footer-links">
-	                <a class="footer-link" href="index.html">Home</a>
-	             	<a class="footer-link" href="https://www.coindesk.com/" target="_blank">News</a>
-	                <a class="footer-link" href="https://www.kraken.com/" target="_blank">Buy</a>
-	                <a class="footer-link" href="https://coinmarketcap.com/" target="_blank">Market Cap</a>
-	        </div>
-	        
-	        <div class="row">
-	            <div class="col disclaimer">
-	                The above references and opinions are for information and entertainment purposes only.  It is not intended to be financial advice.  Seek a duly licensed professional for investment advice.
-	                Bitcoin Explained is not affiliated with any external site linked.
-	            </div>
-	        </div>
-	    </div>
-	    
-	</footer>
-
-</body>
+		<footer class="body-max-width">
+			<div class="footer-styles">
+				<div class="row">
+					<div class="col-sm-2 footer-link">
+						<h2>Link 1</h2>
+					</div>
+					
+					<div class="col-sm-2 footer-link">
+						<h2>Link 2</h2>
+					</div>
+					
+					<div class="col-sm-2 footer-link">
+						<h2>Link 3</h2>
+					</div>
+					
+					<div class="col-sm-2 footer-link">
+						<h2>Link 4</h2>
+					</div>
+					
+					<div class="col-sm-4 footer-socialmedia-icons">
+						<i class="fab fa-facebook-square"></i>
+						<i class=" fab fa-instagram"></i>
+						<i class=" fab fa-twitter"></i>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-sm-8 footer-link">
+						<p></p>
+					</div>
+					<div class="col-sm-4 footer-link">
+						<p></p>
+					</div>
+					
+				</div>
+			</div>
+		</footer>
+		
+	</body>
 </html>
-

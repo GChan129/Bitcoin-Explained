@@ -1,0 +1,177 @@
+.remove-a-styles {
+    text-decoration: none;
+    color: #212121;
+}
+
+.remove-a-styles:hover {
+    text-decoration: none;
+    color: #575757;
+}
+
+.top-bar {
+    height: 5rem;
+    background-color: #F6F6F6;
+}
+
+.nav-links {
+    font-size: 20pt;
+    font-weight: 600;
+    float: right;
+    padding: 1em .5em 0 .5em;
+}
+
+
+/*------------------------------ TITLE --------------*/
+
+.float--left {
+    float: left;
+}
+
+.float--right {
+    float: right;
+}
+
+
+.home-title {
+    text-align: center;
+    height: 20em;
+    width: 100%;
+    background-color: #b8b8b8;
+}
+
+.body-max-width {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/*---------------------- HOME PAGE BODY LINKS -------*/
+
+.half-width {
+    width: 50%;
+}
+
+.home-link-styles {
+    height: 10em;
+    text-align: center;
+    float: left;
+    margin: 1em 0 1em 0;
+}
+
+.link-btc101 {
+    background-color: #ffff4c;
+    transition: background-color 0.5s ease;
+}
+
+.link-btc101:hover {
+    background-color: #EBDA41;
+}
+
+.link-blockchain {
+    background-color: #7ec0ee;
+    transition: background-color 0.5s ease;
+}
+
+.link-blockchain:hover {
+    background-color: #49a9ee;
+}
+
+.link-crypto {
+    background-color: #4ec318;
+    transition: background-color 0.5s ease;
+}
+
+.link-crypto:hover {
+    background-color: #42ac11;
+}
+
+.link-decent {
+    background-color: #ff3232;
+    transition: background-color 0.5s ease;
+}
+
+.link-decent:hover {
+    background-color: #ef1f1f;
+}
+
+.home-img1 {
+   background-image: url("../images/img1.jpg");
+
+}
+
+.home-img2 {
+   background-image: url("../images/image2.jpg");
+}
+
+.home-img-margin {
+        margin: 1em 0 1em 0;
+}
+
+.links-icon{
+    padding-top: .5em;
+    font-size: 60pt;
+}
+
+
+/*---------------------------- FOOTER --------------*/
+
+.footer-styles {
+    margin-top: 1em;
+    height: 8em;
+    background-color: #b8b8b8;
+}
+
+.footer-link {
+    padding: 1rem 0 0 2rem;
+}
+
+.footer-socialmedia-icons {
+    text-align: right;
+    font-size: 40pt;
+    padding-right: .5em;
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .dropdown {
+        display: inline-block;
+    }
+    
+    .nav-links {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    
+    .dropdown {
+        display: none;
+    }
+    
+    .nav-links {
+        display: inline;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    
+    .dropdown {
+        display: none;
+    }
+
+    .nav-links {
+        display: inline;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    
+    .dropdown {
+        display: none;
+    }
+    
+      .nav-links {
+        display: inline;
+    }
+    
+}
